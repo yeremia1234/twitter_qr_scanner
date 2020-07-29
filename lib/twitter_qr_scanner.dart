@@ -104,19 +104,7 @@ class _QRViewState extends State<QRView> {
         widget.overlay != null
             ? getSlider()
             : Container(),
-        Align(
-          alignment: Alignment.topLeft,
-          child: SafeArea(
-              child: IconButton(
-                icon: Icon(
-                  Icons.clear,
-                  color: Colors.white70,
-                ),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              )),
-        ),
+        
         Positioned(
           bottom: 16,
           left: 0,
